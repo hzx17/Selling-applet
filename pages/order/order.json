@@ -1,0 +1,11 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00a0dc",
+    "navigationBarTitleText": "点餐中心",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+    "van-tab": "/miniprogram_npm/vant-weapp/tab/index",
+     "van-tabs": "/miniprogram_npm/vant-weapp/tabs/index"
+  }
+} 
+

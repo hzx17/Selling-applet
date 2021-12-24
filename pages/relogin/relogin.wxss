@@ -1,0 +1,66 @@
+page{
+  background:#f4f5f7;
+}
+.relogin_box{
+  width: 100%;
+  height: 500px;
+}
+.relogin_zhuce{
+  width: 90%;
+  padding-left: 20px;
+  height: 50px;
+  margin-top:50px ;
+  font-size: 20px;
+  font-weight: bold;
+  color: orange;
+}
+.relogin_usernum{
+  width: 90%;
+    height: 40px;
+  border-bottom: 1px solid #8a8a8a;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.usernum_input{
+  width: 100%;
+  height: 40px;
+line-height: 40px;
+}
+.relogin_password{
+  width: 90%;
+    height: 40px;
+  border-bottom: 1px solid #8a8a8a;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.password_input{
+  width: 75%;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+}
+.relogin_repassword{
+  width: 90%;
+    height: 40px;
+  border-bottom: 1px solid #8a8a8a;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.repassword_input{
+  width: 75%;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+}
+.relogin_botton{
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
+.relogin_bottonlogin{
+  width: 100px;
+  height: 40px;
+  background: orange;
+  border-radius: 20px;
+  color: white;
+}

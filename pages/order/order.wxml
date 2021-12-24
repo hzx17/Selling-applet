@@ -1,0 +1,298 @@
+
+<swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" bindtap="clickImg2">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+          <image style="width: 100%;height: 100%;" mode="scaleToFill" src="{{item}}"></image>
+           </swiper-item>
+           </block>
+</swiper>
+<!-- --------------------------------------- -->
+<van-tabs active="{{ active }}" >
+   <van-tab title="点餐">
+    <view class="foods_box">
+    <view class="foods_kinds">
+      <scroll-view scroll-y="true" style="height: 400px;" scroll-into-view="{{listview}}">
+      <view wx:for="{{goods}}" wx:key="*this" id="list{{index}}">
+       <view class="foods_kinds_combo">
+        <view bindtap="change" data-id="{{index}}"  style="color:{{ index==selectcolor? '#1296db':''}} ;"   class="foods_kinds_combo_center">{{item.name}}</view>
+       </view>
+      </view>
+      </scroll-view>
+    </view>
+    <view class="foods_meau">
+      <scroll-view scroll-y="true" style="height: 600px;" scroll-into-view="{{topview}}"  bindscroll="scroll">
+        <view wx:for="{{goods}}"  wx:key="index" class="xx">
+           <view id="index{{index}}" class="foods_meau_text">
+              <view class="foods_meau_text_view">{{item.name}}</view>
+           </view>
+      <block wx:for="{{item.foods}}" wx:for-item="w" wx:for-index="xt" wx:key="index">
+           <view class="foods_meau_nav">
+            <view class="meau_nav_left" bindtap="clickImg1" data-parent="{{index}}" data-index="{{xt}}">
+                 <image class="meau_nav_left_img" src="{{w.icon}}"></image>
+            </view>
+            <view class="meau_nav_right">
+                <view class="meau_nav_right_top">{{w.name}}</view>
+                <view class="meau_nav_right_center">
+                       <text >品牌:{{w.brand}}</text>
+                       <text  style="margin-left: 20px;">类型:{{w.type}}</text>
+                </view>
+                <view class="meau_nav_right_bottom">
+                       <view class="meau_nav_right_bottom_money">￥{{w.price}}</view>
+                       <view class="meau_nav_right_bottom_aj">
+                            <view class="meau_nav_right_bottom_aj_cut" bindtap="cut" data-parent="{{index}}" data-index="{{xt}}" wx:if="{{w.Count>0}}">
+                                <image src="/img/cut.png" style="width: 70%; height: 20px;margin-top: 5px;"></image>
+                            </view> 
+                            <view class="meau_nav_right_bottom_aj_count" wx:if="{{w.Count>0}}">{{w.Count}}</view>
+                            <view class="meau_nav_right_bottom_aj_add" bindtap="add" data-parent="{{index}}" data-index="{{xt}}" >
+                                <image src="/img/add.png" style="width: 70%; height: 20px;margin-top: 5px; margin-left: 5px; "></image>
+                            </view>
+                       </view>
+                </view>
+            </view>
+           </view>
+      </block>
+        </view>
+      </scroll-view>
+    </view>
+    </view>
+    <view class="shop_box" wx:if="{{show_shop}}">
+        <view class="shop_top">
+              <view class="shop_top_left">购物车</view>
+              <view class="shop_top_right">清空</view>
+        </view>
+        <view class="shop_bottom">
+         <view wx:for="{{shop_list}}" wx:key="*this">
+              <view class="shop_bottom_list" >
+                  <view class="shop_bottom_list_name" >{{item.name}}</view>
+                  <view class="shop_bottom_list_price" >￥{{item.price}}</view>
+                  <view class="shop_bottom_list_cut" data-index="{{item.index}}"   data-parent="{{item.parent}}" bindtap="cut">
+                     <image src="/img/cut.png" style="width: 60%; height: 20px;margin-top: 5px;" ></image>
+                  </view>
+                  <view class="shop_bottom_list_text" >{{item.num}}</view>
+                  <view class="shop_bottom_list_add" data-index="{{item.index}}"  data-parent="{{item.parent}}" bindtap="add">
+                     <image src="/img/add.png" style="width: 60%; height: 20px;margin-top: 5px; margin-left: 5px; "></image>
+                  </view>
+              
+              </view>
+         </view>
+        </view>
+    </view>
+    <view class="bottom_box">
+          <view class="bottom_left">
+          <view class="bottom_left_img" bindtap="shop">
+            <view class="bottom_number" wx:if="{{total_num>0}}">{{total_num}}</view>
+            <image style="width: 100%; height: 100%; " src="/img/shop.png"></image>
+          </view>
+          <view class="bottom_left_text">￥{{total_price}}</view>
+          </view>
+           <view class="bottom_right">{{min}}</view>
+    </view>
+  </van-tab>
+  <van-tab title="评价">
+     <view class="eva_box">
+           <view class="eva_mark">
+              <view class="eva_mark_top">
+                  <view class="eva_mark_top_left">
+                       <view class="eva_mark_top_left_num">4.7</view>
+                       <view class="eva_mark_top_left_eva">商家评价</view>
+                  </view>
+                  <view class="eva_mark_top_center">
+                    <view class="eva_mark_top_center_taste">
+                      <view class="eva_mark_top_center_taste_text1">口味</view>
+                      <view class="eva_mark_top_center_taste_img">
+                         <view class="eva_mark_top_center_taste_img1">
+                            <image style="width: 10px; height: 10px;" src="/img/star.png"></image>
+                         </view>
+                         <view class="eva_mark_top_center_taste_img2">
+                            <image style="width: 10px; height: 10px;" src="/img/star.png"></image>
+                         </view>
+                         <view class="eva_mark_top_center_taste_img3">
+                            <image style="width: 10px; height: 10px;" src="/img/star.png"></image>
+                         </view>
+                         <view class="eva_mark_top_center_taste_img4">
+                            <image style="width: 10px; height: 10px;" src="/img/star.png"></image>
+                         </view>
+                         <view class="eva_mark_top_center_taste_img5">
+                            <image style="width: 10px; height: 10px;" src="/img/star1.png"></image>
+                         </view>
+                      </view>
+                      <view class="eva_mark_top_center_taste_text2">4.6</view>
+                    </view>
+                    <view class="eva_mark_top_center_send">
+                      <view class="eva_mark_top_center_taste_text1">包装</view>
+                      <view class="eva_mark_top_center_taste_img">
+                         <view class="eva_mark_top_center_taste_img1">
+                            <image style="width: 10px; height: 10px;" src="/img/star.png"></image>
+                         </view>
+                         <view class="eva_mark_top_center_taste_img2">
+                            <image style="width: 10px; height: 10px;" src="/img/star.png"></image>
+                         </view>
+                         <view class="eva_mark_top_center_taste_img3">
+                            <image style="width: 10px; height: 10px;" src="/img/star.png"></image>
+                         </view>
+                         <view class="eva_mark_top_center_taste_img4">
+                            <image style="width: 10px; height: 10px;" src="/img/star.png"></image>
+                         </view>
+                         <view class="eva_mark_top_center_taste_img5">
+                            <image style="width: 10px; height: 10px;" src="/img/star1.png"></image>
+                         </view>
+                      </view>
+                      <view class="eva_mark_top_center_taste_text2">4.7</view>
+                    </view>
+                    </view>
+                  <view class="eva_mark_top_right">
+                    <view class="eva_mark_top_right_num">4.9</view>
+                    <view class="eva_mark_top_right_eva">配送评价</view>
+                  </view>
+              </view>
+              <view class="eva_mark_bottom">
+                <view class="eva_mark_bottom_all">
+                     <view class="eva_mark_bottom_all_text">全部评价(1245)</view>
+                 </view>
+                 <block wx:for="{{eva}}" wx:key="*this">
+                 <view class="eva_mark_bottom_list">
+                     <view class="eva_mark_bottom_list_text">{{item}}</view>
+                 </view>
+                 </block>
+          
+              </view>
+           </view>
+           <view class="eva_user">
+              <view class="eva_user_imfo">
+                 <view class="eva_user_imfo_left">
+                     <image style="width: 100%;height: 100%;" src="/img/head.png"></image> 
+                </view>
+                 <view class="eva_user_imfo_center">
+                    <view class="eva_user_imfo_center_name">风起</view>
+                    <view class="eva_user_imfo_center_eva">
+                      <view class="eva_mark_top_center_taste_img">
+                         <view class="eva_mark_top_center_taste_img1">
+                            <image style="width: 10px; height: 10px;" src="/img/star.png"></image>
+                         </view>
+                         <view class="eva_mark_top_center_taste_img2">
+                            <image style="width: 10px; height: 10px;" src="/img/star.png"></image>
+                         </view>
+                         <view class="eva_mark_top_center_taste_img3">
+                            <image style="width: 10px; height: 10px;" src="/img/star.png"></image>
+                         </view>
+                         <view class="eva_mark_top_center_taste_img4">
+                            <image style="width: 10px; height: 10px;" src="/img/star.png"></image>
+                         </view>
+                         <view class="eva_mark_top_center_taste_img5">
+                            <image style="width: 10px; height: 10px;" src="/img/star.png"></image>
+                         </view>
+                      </view>
+                    </view>
+                 </view>
+                 <view class="eva_user_imfo_right">2021.11.11</view>
+              </view>
+              <view class="eva_user_eva">太好吃了！</view>
+              <view class="eva_user_img">
+                   <view class="eva_user_img_left">
+                      <image style="width: 100%;height: 100%;" src="/img/1.jpg"></image>
+                   </view>
+              </view>
+              <view class="eva_user_good"></view>
+           </view>
+      </view>
+  </van-tab>
+  <van-tab title="商家">   
+      <view class="business_box">
+         <view class="business_shop">
+            <view class="business_shop_top">
+               <view class="business_shop_text">
+                    <view class="business_shop_text_name">脆香鸡汉堡&炸鸡(成都大学店)</view>
+                    <view class="business_shop_text_loc" bindtap="location">
+                     <view class="business_shop_text_loc_img" >
+                        <image style="width: 100%;height: 100%;" src="/img/loc2.png"></image>
+                     </view>
+                     <view class="business_shop_text_loc_text">成都市龙泉驿区成都大学</view>
+                    </view>
+               </view>
+               <view class="business_shop_phone">
+                    <view class="business_shop_phone_img" catchtap='tels' data-index="4" data-current="4">
+                        <image style="width: 100%;height: 100%;" src="/img/call.png"></image>
+                    </view>
+               </view>
+            </view>
+            <view class="business_shop_img">
+               <block wx:for="{{shopimglist}}" wx:key="*this">
+                 <view class="business_shop_img_left" >
+                     <image style="width: 100%;height: 100%;" src="{{item}}"  bindtap="clickImg"></image>
+                 </view>
+               </block>
+            </view>
+            <view class="business_shop_imfo">
+                  <view class="business_shop_imfo_text">商品信息</view>
+                  <view class="business_shop_imfo_kind">商品品类：炸鸡&汉堡</view>
+                  <view class="business_shop_imfo_time">营业时间：10:00~21:00</view>
+            </view>
+            <view class="business_shop_fuwu">
+                  <view class="business_shop_fuwu_text">商家服务</view>
+                  <view class="business_shop_fuwu_introduce">商家已购买食品安全责任险</view>
+            </view>
+         </view>
+         <view class="business_jubao">举报商家</view>
+
+      </view>
+  </van-tab>
+  <van-tab title="客服">
+      <view class="box1">
+         <scroll-view scroll-y="true" style="height: 315px;"   scroll-top="{{talk_scroll}}">
+          <!-- 左边的第一次讲话 -->
+          <block wx:for="{{kefu}}" wx:key="index">
+            <view class="talk_1" wx:if="{{item.weizhi=='left'}}">
+              <!-- 聊天时间 -->
+              <view class="talktime"></view>
+              <view class="talk_1_content">
+                <!-- 头像 -->
+                <view class="talk_1_img">
+                  <image src="/img/my1.png" style="height: 40px;width: 40px;border-radius: 20px;"></image>
+                </view>
+                <view class="talk_1_text">
+                  <view class="talk_1_text_0"></view>
+                  <view class="talk_1_text_txt">{{item.value}}</view>
+                </view>
+              </view>
+            </view>
+          <!-- 右边的第一次讲话 -->
+          <view class="talk_2" wx:if="{{item.weizhi=='right'}}">
+            <!-- 聊天时间 -->
+            <view class="talktime">{{send_time[index]}}</view>
+            <view class="talk_2_content">
+              <!-- 头像 -->
+              <view class="talk_2_img">
+                 <image src="/img/head.png" style="height: 40px;width: 40px;border-radius: 20px;"></image>
+              </view>
+              <view class="talk_2_text">
+                <view class="talk_2_text_0"></view>
+                <view class="talk_2_text_txt" bindtap="huoqu">{{item.value}}</view>
+              </view>
+            </view>
+          </view>
+          </block>
+         </scroll-view>
+      </view>
+      <view class="input">
+          <view class="input_icon">
+          <view class="input_icon_box">
+              <image style="width: 100%;height: 100%;" src="/img/input.png"></image>
+          </view>
+          </view>
+          <view class="input_text">
+            <input class="input_text_txt" value="{{input_value}}" bindinput="input" maxlength="100" placeholder="输入聊天内容" />
+          </view>
+          <view class="input_send">
+          <view class="input_1">
+              <view class="input_send_send"   bindtap="send">发送</view>
+          </view>
+          </view>
+    
+      </view>
+  </van-tab>
+</van-tabs>
+
+
+
+

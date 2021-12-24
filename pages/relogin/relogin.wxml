@@ -1,0 +1,16 @@
+<view class="relogin_box">
+    <view class="relogin_zhuce">手机号注册</view>
+      <view class="relogin_usernum">
+      <input class="usernum_input" maxlength="11"  bindinput="usernuminput" placeholder="请输入你的电话号码" />
+      </view>
+      <view class="relogin_password">
+      <input class="password_input"  bindinput="passwordinput"  placeholder="请输入你的密码" />
+      <!-- <view class="login_password_huqu">获取验证码</view> -->
+      </view>
+      <view class="relogin_repassword">
+      <input class="repassword_input" maxlength="11"  bindinput="repasswordinput" placeholder="请确认你的密码" />
+      </view>
+      <view class="relogin_botton">
+        <button class="relogin_bottonlogin" bindtap="relogin" disabled="{{loginBtnstate}}">注册</button>
+      </view>
+</view>

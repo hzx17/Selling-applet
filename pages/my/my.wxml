@@ -1,0 +1,59 @@
+<view class="big_box">
+   <view class="big_top">
+     <view class="big_welcome">
+       <view class="big_welcome_text">Hi，欢迎来到乡村基</view>
+       <view class="big_welcome_login" bindtap="login">登录/注册</view>
+       <image class="big_welcome_imgb" src="https://img02.hua.com/m/member/center/backgroundv3.png"></image>
+     </view>
+     <view class="big_order">
+        <view class="big_order_head">
+            <view class="big_order_head_left">我的订单</view>
+            <view class="big_order_head_right"> 全部订单></view>
+            <view style="clear: both;"></view>
+        </view>
+        <view class="big_order_bottom">
+            <view class="big_order_bottom_money">
+                <view class="big_order_bottom_money_icon">
+                     <image style="width: 100%;height: 120%;" src="	https://img02.hua.com/m/member/center/myinfo_pendingpay.png"></image>
+                </view>
+                <view class="big_order_bottom_money_text">待付款</view>
+            </view>
+            <view class="big_order_bottom_send">
+              <view class="big_order_bottom_send_icon">
+                     <image style="width: 100%;height: 120%;" src="https://img02.hua.com/m/member/center/myinfo_distribution.png"></image>
+                </view>
+                <view class="big_order_bottom_send_text">今日配送</view>
+            </view>
+            <view class="big_order_bottom_evalu">
+              <view class="big_order_bottom_evalu_icon">
+                     <image style="width: 100%;height: 120%;" src="	https://img02.hua.com/m/member/center/myinfo_evaluation.png"></image>
+                </view>
+                <view class="big_order_bottom_evalu_text">评价有礼</view>
+            </view>
+            <view style="clear: both;"></view>
+        </view>
+        <view style="clear: both;"></view>
+     </view>
+    </view>
+    <view class="big_linkbox">
+      <view class="big_line"></view>
+      <block wx:for="{{list}}" wx:key="*this">
+       <view class="linkbox_list">
+          <view class="linkbox_list_img">
+              <image class="linkbox_list_img_image" src="{{item}}"></image>
+          </view>
+          <view  class="linkbox_list_text">{{text[index]}}</view>
+        </view>
+        </block>
+    </view>
+    <view class="big_bottom">
+      <block wx:for="{{kinds}}" wx:key="*this">
+       <view class="big_bottom_kinds">
+          <view class="big_bottom_kinds_img">
+              <image class="big_bottom_kinds_img_image" src="{{item}}"></image>
+          </view>
+          <view  class="big_bottom_kinds_text">{{text2[index]}}</view>
+        </view>
+        </block>
+    </view>
+</view>

@@ -1,0 +1,171 @@
+/* pages/kefu/kefu.wxss */
+/* pages/contact/contact.wxss */
+
+page {
+  background-color: #f1f1f1;
+}
+
+/* 客服聊天界面 */
+.box1{
+  width: 100%;
+  height: 100%;
+  background-color: #f7ededbd;
+  padding-top:10rpx ;
+  color: white;
+  font-family: "微软雅黑";
+}
+/* 左边讲话 */
+.talk_1{
+  width: 100%;
+}
+.talktime{
+  width: 100%;
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 22rpx;
+  color: #ccc;
+}
+.talk_1_content{
+  width: 100%;
+  display: flex;
+}
+.talk_1_img{
+    width: 80rpx;
+    height: 80rpx;
+    position: relative;
+    left: 20rpx;
+    top: 10rpx;
+    border-radius: 40rpx;
+}
+.talk_1_text{
+  width: 400rpx;
+  position: relative;
+  left: 30rpx;
+}
+.talk_1_text_0{
+  width: 0;
+  height: 0;
+  border-top:10rpx solid rgb(0,0,0,0) ;
+  /* border-bottom:10rpx solid rgb(79, 179, 233); */
+  border-bottom:10rpx solid rgb(255, 255, 255);
+  border-left:10rpx solid rgb(0,0,0,0);
+  /* border-right:10rpx solid rgb(79, 179, 233); */
+  border-right:10rpx solid rgb(255, 255, 255);
+  position: relative;
+  top: 20rpx;
+  left: 5rpx;
+}
+.talk_1_text_txt{
+  /* background-color: rgb(79, 179, 233); */
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
+  position: relative;
+  left: 20rpx;
+  top: -15rpx;
+  padding: 10rpx;
+  padding-right: 5rpx;
+  border-radius: 10rpx;
+  display: inline-block;
+}
+/* 右边讲话 */
+.talk_2{
+  width: 100%;
+}
+.talk_2_content{
+  width: 100%;
+  display: flex;
+}
+.talk_2_img{
+  width: 80rpx;
+  height: 80rpx;
+  position: relative;
+  left: 648rpx;
+  top: 10rpx;
+  border-radius: 40rpx;
+}
+.talk_2_text{
+  width: 400rpx;
+  position: relative;
+  left: 158rpx;
+}
+.talk_2_text_0{
+  width: 0;
+  height: 0;
+  border-top:10rpx solid rgb(0,0,0,0) ;
+  border-bottom:10rpx solid rgb(79, 179, 233);
+  border-left:10rpx solid rgb(79, 179, 233);
+  border-right:10rpx solid rgb(0,0,0,0);
+  position: relative;
+  top: 20rpx;
+  left: 374rpx;
+}
+.talk_2_text_txt{
+  background-color: rgb(79, 179, 233);
+  font-size: 14px;
+  position: absolute;
+  right: 23rpx;
+  top: 6rpx;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  display: inline-block;
+}
+/* 输入框 */
+.input{
+  width: 100%;
+  height: 40px;
+  background-color: #f4f5f7;
+  position: fixed;
+  bottom: 0;
+}
+.input_icon{
+  width: 15%;
+  height: 40px ;
+  float: left
+}
+.input_icon_box{
+  width: 26px;
+  height: 26px ;
+  padding: 7px;
+}
+.input_text{
+  width: 65%;
+  height: 40px;
+  float: left;
+}
+.input_text_txt{
+  width: 90%;
+padding-left: 10px;  
+  height: 30px;
+  margin-top: 5px;
+  background: white;
+  border-radius: 30px;
+}
+.input_send{
+  width: 20%;
+  height: 40px;
+  float: left;
+}
+.input_send_send{
+  width: 90%;
+  height: 26px;
+  background: orange;
+  margin-top: 7px;
+  border-radius: 30px;
+  font-size: 14px;
+  color: white;
+  line-height: 26px;
+  text-align: center;
+  font-weight: bold;
+}
+/* .input_1{
+  width: 70%;
+  height: 80%;
+  background-color: #fff;
+  position: relative;
+  top: 7rpx;
+  border-radius: 5px;
+  left: 20rpx;
+} */
+
+

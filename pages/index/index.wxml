@@ -1,0 +1,355 @@
+<!-- --------------------------------- -->
+
+<swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+        <block wx:for="{{background}}" wx:key="*this">
+         <swiper-item>
+          <view class="big_nav">
+           <image style="width: 100%;height: 90%;" mode="scaleToFill"  src="{{item}}"></image>
+          </view>
+         </swiper-item>
+         </block>
+</swiper>
+<!-- ----------------------轮播图-------------------------->
+<view class="conpany_box">
+   <view class="conpany_one">
+      <view class="conpany_one_text">认证龙头企业</view>
+      <view class="conpany_one_img1">
+         <image  class="conpany_one_img1_image" src="/img/ok.png" style="width: 50%;height: 40%;" mode="scaleToFill" ></image>
+      </view>
+    </view>  
+   <view class="conpany_two">
+      <view class="conpany_two_text">16年品牌</view>
+      <view class="conpany_two_img2">
+         <image class="conpany_two_img2_image" src="/img/ok.png" style="width:75%;height: 40%;" mode="scaleToFill" ></image>
+      </view>
+   </view> 
+   <view class="conpany_three">
+       <view class="conpany_three_text">3小时送达</view>
+       <view class="conpany_three_img3">
+         <image class="conpany_three_img3_image" src="/img/ok.png" style="width: 75%;height: 40%;" mode="scaleToFill" ></image>
+      </view>
+      </view> 
+   <view class="conpany_four">
+         <view class="conpany_four_text">近14646条好评</view>
+         <view class="conpany_four_img4">
+            <image class="conpany_four_img4_image" src="/img/ok.png" style="width: 50%;height: 40%;" mode="scaleToFill" ></image>
+      </view>
+      </view> 
+</view>
+
+<!-- - ---------------------类型-----------------------  -->
+<view class="cate_box">
+   <view class="cate_cate">
+     <view class="cate_img">
+         <image src="https://img02.hua.com/wx_imgs/home_flowers.png"></image>
+      </view>
+      <view class="cate_text">鲜花</view>
+      </view>
+      <view class="cate_cate">
+      <view class="cate_img">
+         <image src="https://img02.hua.com/wx_imgs/home_forever.png"></image>
+      </view>
+      <view class="cate_text">永生花</view>
+     </view>
+      <view class="cate_cate">
+      <view class="cate_img">
+         <image src="	https://img02.hua.com/wx_imgs/home_cakes.png"></image>
+      </view>
+      <view class="cate_text">蛋糕</view>
+     </view>
+      <view class="cate_cate">
+      <view class="cate_img">
+         <image src="	https://img02.hua.com/wx_imgs/home_gifts.png"></image>
+      </view>
+      <view class="cate_text">礼品</view>
+     </view>
+      <view class="cate_cate">
+      <view class="cate_img">
+         <image src="https://img02.hua.com/wx_imgs/home_chocolate.png"></image>
+      </view>
+      <view class="cate_text">巧克力</view>
+     </view>
+      <view class="cate_cate">
+      <view class="cate_img">
+         <image src="https://img02.hua.com/wx_imgs/home_birthday_1224.png"></image>
+      </view>
+      <view class="cate_text">生日祝福</view>
+     </view>
+      <view class="cate_cate">
+      <view class="cate_img">
+         <image src="https://img02.hua.com/wx_imgs/home_express_1224.png"></image>
+      </view>
+      <view class="cate_text">表白求婚</view>
+     </view>
+      <view class="cate_cate">
+      <view class="cate_img">
+         <image src="https://img02.hua.com/wx_imgs/home_business_1224.png"></image>
+      </view>
+      <view class="cate_text">商务开业</view>
+     </view>
+      <view class="cate_cate">
+      <view class="cate_img">
+         <image src="https://img02.hua.com/wx_imgs/home_anniversary_1224.png"></image>
+      </view>
+      <view class="cate_text">周年纪念</view>
+    </view>
+      <view class="cate_cate">
+      <view class="cate_img">
+         <image src="https://img02.hua.com/wx_imgs/home_group_1224.png"></image>
+      </view>
+      <view class="cate_text">企业团购</view> 
+   </view>
+</view>
+<!-- ---------------------花的类型---------------------------- -->
+<view class="sence_box">
+    <view class="sence_send">
+       <view class="send_lover">
+         <image class="send_lover_img" src="https://img02.hua.com/wx_imgs/home_use_lover.png?v2" style="width: 100%;height: 100%;"></image>
+         <view class="send_lover_text1">送恋人</view>
+         <view class="send_lover_text2">所有怦然心动，都是你</view>
+         <view class="send_lover_go">
+             <image src="https://img02.hua.com/m/icon/go_red.png" style="width: 70%;height: 50%;"></image>
+         </view>
+       </view>
+       <view class="send_right">
+         <view class="send_right_family">
+             <image style="width: 100%;height:100%;" src="https://img02.hua.com/wx_imgs/home_use_older.png"></image>
+             <view class="send_right_family_text1">送长辈</view>
+             <view class="send_right_family_text2">谢谢你，我爱你</view>
+             <view class="send_right_family_go">
+             <image src="https://img02.hua.com/m/icon/go_red.png" style="width: 60%;height: 40%;"></image>
+             </view>
+         </view>
+         <view class="send_right_friend">
+            <image style="width: 100%;height: 100%;" src="https://img02.hua.com/wx_imgs/home_use_friends.png" ></image>
+            <view class="send_right_friend_text1">送挚友</view>
+            <view class="send_right_friend_text2">久违亦如初见</view>
+            <view class="send_right_friend_go">
+            <image src="https://img02.hua.com/m/icon/go_red.png" style="width: 60%;height: 40%;"></image>
+            </view>
+         </view>
+       </view>
+    </view>
+    <view class="sence_kind">
+       <view class="kind_more">
+          <view class="kind_more_text">
+            <text class="kind_more_text_1">热销榜单</text>
+            <view class="kind_more_text_2">
+               <text class="kind_more_text_2_text">集万千宠爱</text>
+            </view>
+          </view>
+          <view class="kind_more_img">
+               <view class="kind_more_img_left">
+                    <view class="kind_more_img_left_img">销量冠军></view>
+                    <view class="kind_more_img_left_text">热销7.7万束</view>
+               </view>
+               <view class="kind_more_img_right">
+                  <view class="kind_more_img_right_img">
+                    <image style="width: 90%;height: 100%;" src="https://img02.hua.com/chanpintupian/rexiaobangdan.png"></image>
+                  </view>
+               </view>
+          </view>
+       </view>
+       <view class="kind_price">
+         <view class="kind_price_text">
+            <text class="kind_price_text_1">特价专区</text>
+            <view class="kind_price_text_2">
+               <text class="kind_price_text_2_text">超值好货</text>
+            </view>
+          </view>
+          <view class="kind_price_img">
+            <image style="width: 100%; height: 100%;" src="https://img02.hua.com/chanpintupian/tejiazhuanqu3333x.png"></image>
+          </view>
+       </view>
+       <view class="kind_list">
+           <view class="kind_list_left">
+               <view class="kind_list_left_text">
+                  <view class="kind_list_left_text_color"></view>
+                  <view class="kind_list_left_text_text">设计师甄选</view>
+               </view>
+               <view class="kind_list_left_img">
+                    <view class="kind_list_left_img_image">
+                       <image style="width: 100%; height: 100%;" src="https://img02.hua.com/chanpintupian/2xshejishizhenxuan.png"></image>
+                    </view>
+               </view>
+           </view>
+           <view class="kind_list_right">
+            <view class="kind_list_right_text">
+                  <view class="kind_list_right_text_color"></view>
+                  <view class="kind_list_right_text_text">韩式鲜花</view>
+               </view>
+               <view class="kind_list_right_img">
+                    <view class="kind_list_right_img_image">
+                       <image style="width: 100%; height: 100%;" src="	https://img02.hua.com/chanpintupian/hanshixianhua.png"></image>
+                    </view>
+               </view></view>
+       </view>
+       <view class="kind_designer">
+         <view class="kind_designer_text">
+            <text class="kind_designer_text_1">新品来袭</text>
+            <view class="kind_designer_text_2">
+               <text class="kind_designer_text_2_text">惊艳开售</text>
+            </view>
+          </view>
+          <view class="kind_designer_img">
+            <image style="width: 100%; height: 100%;" src="	https://img02.hua.com/chanpintupian/3xxinpinlaixi.png"></image>
+          </view></view>
+    </view>
+</view>
+<!-- ---------------------送恋人---------------------------- -->
+<view class="lover_box">
+      <view class="lover_text">送恋人/爱情鲜花</view>
+      <block wx:for="{{loverflower}}" wx:key="*this"> 
+       <view class="lover_flower">
+         <view class="lover_flower_img">
+             <image  style="width: 100%;height: 100%; border-radius: 10px 0px 0px 10px;" src="{{item.img}}"></image>
+         </view>
+         <view class="lover_flower_text">
+              <view class="lover_flower_text_1">{{item.text1}}</view>
+              <view class="lover_flower_text_2">{{item.text2}}</view>
+              <view class="lover_flower_text_3">
+                    <view class="lover_flower_text_3_tap">{{item.text3}}</view>
+              </view>
+              <view class="lover_flower_text_4">{{item.text4}}</view>
+              <view class="lover_flower_text_5">
+               <view class="lover_flower_text_5_left">
+                  <view class="lover_flower_text_5_money">￥{{item.text5_1}}</view>
+                  <view class="lover_flower_text_5_number">已销售{{item.text5_2}}万件</view>
+               </view>
+               <view class="lover_flower_text_5_right">
+                  <view class="lover_flower_text_5_shopping">
+                      <view class="lover_flower_text_5_shopping_img">
+                         <image style="width: 100%;height: 100%;" src="https://img02.hua.com/m/home/img/home_buy_btn.png"></image>
+                      </view>
+                  </view>
+               </view>
+              </view>
+         </view>
+       </view>
+      </block>
+</view>
+<view class="look_more">查看更多</view>
+<view class="lover_box">
+      <view class="lover_text">送长辈鲜花</view>
+      <block wx:for="{{loverflower}}" wx:key="*this"> 
+       <view class="lover_flower">
+         <view class="lover_flower_img">
+             <image  style="width: 100%;height: 100%;" src="{{item.img}}"></image>
+         </view>
+         <view class="lover_flower_text">
+              <view class="lover_flower_text_1">{{item.text1}}</view>
+              <view class="lover_flower_text_2">{{item.text2}}</view>
+              <view class="lover_flower_text_3">
+                    <view class="lover_flower_text_3_tap">{{item.text3}}</view>
+              </view>
+              <view class="lover_flower_text_4">{{item.text4}}</view>
+              <view class="lover_flower_text_5">
+               <view class="lover_flower_text_5_left">
+                  <view class="lover_flower_text_5_money">￥{{item.text5_1}}</view>
+                  <view class="lover_flower_text_5_number">已销售{{item.text5_2}}万件</view>
+               </view>
+               <view class="lover_flower_text_5_right">
+                  <view class="lover_flower_text_5_shopping">
+                      <view class="lover_flower_text_5_shopping_img">
+                         <image style="width: 100%;height: 100%;" src="https://img02.hua.com/m/home/img/home_buy_btn.png"></image>
+                      </view>
+                  </view>
+               </view>
+              </view>
+         </view>
+       </view>
+      </block>
+</view>
+<view class="look_more">查看更多</view>
+<block wx:for="{{project}}" wx:key="*this">
+<view class="project_box">
+   <view class="project_text">{{item.name}}</view>
+   <view class="project_big">
+      <block wx:for="{{item.list}}" wx:key="*this">
+      <view  style="float: {{item.float}};" class="project_big_list">
+         <view class="project_big_list_box">
+           <view class="project_big_list_box_img">
+            <image style="width: 100%;height: 100%; border-radius:10px 10px 0px 0px;" src="{{item.img}}"></image>
+           </view>
+
+           <view class="project_big_list_box_text">
+              <view class="project_big_list_box_text_3">
+                    <view class="project_big_list_box_text_3_tap">{{item.text3}}</view>
+              </view>
+              <view class="project_big_list_box_text_4">{{item.text4}}</view>
+              <view class="project_big_list_box_text_5">
+               <view class="project_big_list_box_text_5_left">
+                  <view class="project_big_list_box_text_5_money">￥{{item.text5_1}}</view>
+                  <view class="project_big_list_box_text_5_number">已销售{{item.text5_2}}万件</view>
+               </view>
+               <view class="lover_flower_text_5_right">
+                  <view class="lover_flower_text_5_shopping">
+                      <view class="lover_flower_text_5_shopping_img">
+                         <image style="width: 100%;height: 100%;" src="https://img02.hua.com/m/home/img/home_buy_btn.png"></image>
+                      </view>
+                  </view>
+               </view>
+              </view>
+    
+           </view>
+         </view>
+      </view>
+   </block>
+   </view>
+   <view class="look_more">查看更多</view>
+</view>
+</block>
+
+
+<!-- ---------------------------------- -->
+<view class="baozhang_box">
+    <view class="baozhang_brand">
+       <view class="baozhang_brand_text">花礼网六大保障</view>
+       <view class="baozhang_brand_box">
+       <block wx:for="{{baozhang}}" wx:key="*this">
+       <view class="baozhang_brand_baozhang">
+           <view class="baozhang_brand_baozhang_img">
+              <image style="width: 100%;height: 100%;" src="{{item.img}}"></image>
+           </view>
+           <view class="baozhang_brand_baozhang_text">{{item.text}}</view>
+       </view>
+       </block>
+      </view>
+       <view class="baozhang_brand_more">进一步了解我们</view>
+    </view>
+</view>
+<view class="bottom_box">
+     <view class="bottom_top">
+      <block wx:for="{{bottom}}" wx:key="*this">
+        <view class="bottom_top_text">
+           <view class="bottom_top_text_list" >{{item}}</view>
+        </view>
+       </block>
+     </view>
+     <view class="bottom_center">
+          <view class="bottom_center_center">
+               <view class="bottom_center_center_left">
+                    <view class="bottom_center_center_left_img">
+                    <view class="bottom_center_center_left_img_image">
+                     <view class="bottom_center_center_left_img_image_small">
+                      <image style="width: 100%;height: 100%;" src="/img/phone.png"></image>
+                    </view>
+                    </view>
+                    </view>
+                    <view class="bottom_center_center_left_text">客户端</view>
+                    </view>
+               <view class="bottom_center_center_right">
+                  <view class="bottom_center_center_right_img">
+                    <view class="bottom_center_center_right_img_image">
+                    <view class="bottom_center_center_right_img_image_small">
+                      <image style="width: 100%;height: 100%; " src="/img/kinds1.png"></image>
+                    </view>
+                    </view>
+                  </view>
+                    <view class="bottom_center_center_right_text">客服</view>
+               </view>
+               </view>
+          </view>
+      <view class="bottom_bottom">@author:何治兴</view>
+</view>

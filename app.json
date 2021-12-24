@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/order/order",
+    "pages/relogin/relogin",
+    "pages/login/login",
+    "pages/imfo/imfo",
+    "pages/loc/loc",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/logs/logs",
+    "pages/shopping/shopping",
+    "pages/kefu/kefu"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f4f5f7",
+    "navigationBarTitleText": "何治兴的小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#f57a41",
+    "backgroundColor": "#f4f5f7",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/index.png",
+        "selectedIconPath": "img/index1.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "点餐",
+        "iconPath": "img/order.png",
+        "selectedIconPath": "img/order1.png"
+      },
+      {
+        "pagePath": "pages/shopping/shopping",
+        "text": "购物车",
+        "iconPath": "img/shopping.png",
+        "selectedIconPath": "img/shopping2.png"
+      },
+      {
+        "pagePath": "pages/imfo/imfo",
+        "text": "消息",
+        "iconPath": "img/imfo.png",
+        "selectedIconPath": "img/imfo1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "img/my.png",
+        "selectedIconPath": "img/my1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

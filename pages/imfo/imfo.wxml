@@ -1,0 +1,37 @@
+<!--pages/imfo/imfo.wxml-->
+<view class="imfo_box">
+    <view class="imfo_list" bindtap="chickkefu">
+         <view class="imfo_list_top">
+             <view class="imfo_list_top_img">
+                 <image style="width: 100%;height: 100%;" src="/img/head.png"></image>
+             </view>
+             <view class="imfo_list_top_name">脆香鸡汉堡&炸鸡(成都大学店)</view>
+             <view class="imfo_list_top_time">12:20</view>
+             <view class="imfo_list_top_num">1</view>
+         </view>
+         <view class="imfo_list_center">亲爱的顾客你的外卖已送达，请给个五星好评!</view>
+    </view>
+    <view class="imfo_list1" bindtap="chickkefu">
+         <view class="imfo_list1_top">
+             <view class="imfo_list1_top_img">
+                 <image style="width: 100%;height: 100%;" src="/img/my1.png"></image>
+             </view>
+             <view class="imfo_list1_top_name">外卖红包</view>
+             <view class="imfo_list1_top_time">12:20</view>
+             <view class="imfo_list1_top_num">1</view>
+         </view>
+         <view class="imfo_list1_center">你有一笔现金待领取</view>
+         <view class="imfo_list1_bottom">【天天领现金】查看详情>></view>
+    </view>
+    <view class="imfo_list" bindtap="chickkefu">
+         <view class="imfo_list_top">
+             <view class="imfo_list_top_img">
+                 <image style="width: 100%;height: 100%;" src="/img/head.png"></image>
+             </view>
+             <view class="imfo_list_top_name">骑手</view>
+             <view class="imfo_list_top_time">12:20</view>
+             <view class="imfo_list_top_num">1</view>
+         </view>
+         <view class="imfo_list_center">亲爱的顾客你的外卖已送达，请给个五星好评!</view>
+    </view>
+</view>
