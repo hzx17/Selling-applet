@@ -78,14 +78,14 @@ Page({
     var then=this
       //给后台发送数据，账号，密码，确认密码
   wx.request({
-    url: 'http://127.0.0.1:9090/cdu/LoginServlet', //仅为示例，并非真实的接口地址
+    url: 'http://localhost:9008/login', //仅为示例，并非真实的接口地址
     data:{
       usernum,
       password
+   
     },
     method:'POST',
     success (res) {  
-      console.log(res.data)
       if (res.data.code == 200) {       
       wx.showToast({
         title: '登录成功',

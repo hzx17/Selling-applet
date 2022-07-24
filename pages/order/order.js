@@ -858,16 +858,11 @@ clickImg1: function(e){
 
 
 },
-
-
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad:function () {
    
-
-
 // 获取到缓存
 var then = this
 wx.getStorage({
